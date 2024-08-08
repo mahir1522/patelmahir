@@ -1,0 +1,26 @@
+<div class="projects-container">
+  <div
+    *ngFor="let project of projects"
+    class="project-card text-center"
+    (mouseenter)="onMouseEnter($event)"
+    (mouseleave)="onMouseLeave($event)"
+    (mousemove)="onMouseMove($event)" (click)="openModal(project)">
+    <img [src]="project.image" alt="{{project.title}} Image">
+    <h3>{{project.title}}</h3>
+    <p>{{project.shortDescription}}</p>
+    <button (click)="openModal(project)">View Details</button>
+  </div>
+</div>
+
+<app-model [isVisible]="isModelVisible" (closeModal)="closeModal()">
+  <div *ngIf="selectedProject" class="modal-body">
+    <h4 class="text-center">{{selectedProject.title}}</h4>
+    <img [src]="selectedProject.image" alt="{{selectedProject.title}} Image">
+    <p class="text-center">{{selectedProject.longDescription}}</p>
+    <h5 class="text-center">Technologies Used:</h5>
+    <ul>
+      <li *ngFor="let tech of selectedProject.technologies">{{tech}}</li>
+    </ul>
+    <a class="btn" [href]="selectedProject.sourceCodeLink" target="_blank">Source Code</a>
+  </div>
+</app-model>

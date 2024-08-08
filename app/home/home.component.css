@@ -1,0 +1,88 @@
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.intro h1{
+  font-size: 3.8rem;
+}
+
+.hey{
+  position:relative;
+}
+
+.name{
+  position:relative;
+}
+.name:hover {
+  font-weight: bolder;
+}
+
+.name:hover::after{
+  content: "\1F466";
+  position: absolute;
+  top:-40%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  font-size: 4rem;
+}
+
+.hey:hover{
+  color: white;
+}
+
+.intro span:hover{
+  color: white;
+}
+.hey:hover::after{
+  content: "\1F44B";
+  position: absolute;
+  top:-40%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  font-size: 4rem;
+}
+
+@media (max-width: 950px) {
+
+  .intro{
+    margin: 50px 0px 0px 0px;
+
+  }
+
+  .intro h1{
+    font-size: 1.8rem;
+
+  }
+
+  .intro button{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #21252a;
+    border-radius:0px;
+  }
+}
+
+.btn {
+  margin: 2px 70px;
+  background-color:transparent;
+  border-radius:17px;
+  cursor:pointer;
+  color: black;
+  font-size:1.5rem;
+  font-weight:bold;
+  padding:17px 49px;
+}
+.btn:hover {
+  background-color:transparent;
+  box-shadow:inset 0px 0px 33px 10px #4a5c6a;
+  color: white;
+}
+.btn:active {
+  position:relative;
+  top:1px;
+}

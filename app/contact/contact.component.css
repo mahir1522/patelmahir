@@ -1,0 +1,103 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.form-section {
+  background: linear-gradient(70deg, #495b6a, #9ba8ab);
+  padding: 40px;
+  margin: 80px;
+}
+
+.info-section {
+  margin-bottom: 20px;
+  color: #21252a;
+}
+
+.info-section h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.info-section p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: center;
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  background: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: #e3e7ec;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #495b6a;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  color: #ccd0cf;
+}
+
+button {
+  box-shadow:inset 0px 0px 33px 10px #4a5c6a;
+  border-radius:17px;
+  cursor:pointer;
+  color: #21252a;
+  font-size:1.3rem;
+  font-weight:bold;
+  padding:17px 49px;
+  display: block;
+  margin: 25px auto;
+}
+
+button:hover {
+  background-color:transparent;
+  box-shadow:0px 0px 33px 10px #4a5c6a;
+  color: white;
+}
+
+
+@media (max-width: 950px){
+
+  .contact-container{
+    width: 90%;
+  }
+  .form-section{
+    margin: 30px 10px;
+    padding: 20px;
+  }
+
+  .info-section h1{
+    font-size: 1.6rem;
+  }
+
+  .info-section p{
+    font-size: 1.2rem
+  }
+
+  input, textarea{
+    font-size: 1.2rem;
+  }
+  button{
+    font-size: 1rem;
+    padding:19px 25px;
+  }
+}

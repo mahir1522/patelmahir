@@ -1,0 +1,65 @@
+.container01{
+  text-align: center;
+  color: #21252a;
+  background-color: #2C5364;
+  margin: auto;
+  padding: 40px;
+  width: 70%;
+  border-radius: 23px;
+}
+
+
+input, textarea {
+  background-color: rgba(44, 83, 100, 0.7);
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: #21252a;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #284a59; /* Add border only at the bottom */
+  border-radius: 0; /* Remove border-radius to ensure only bottom border */
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  color: #21252a;
+  border-bottom: 2px solid rgba(44, 83, 100, 0.7);
+}
+
+
+
+button {
+  box-shadow:inset 0px 0px 33px 10px #23395e;
+  border-radius:17px;
+  cursor:pointer;
+  color: #21252a;
+  font-size:1.3rem;
+  font-weight:bold;
+  padding:17px 49px;
+  display: block;
+  margin: 25px auto;
+}
+
+button:hover {
+  background-color:transparent;
+  box-shadow:0px 0px 33px 10px #23395e;
+  color: white;
+}
+
+
+
+@media (max-width: 950px) {
+
+  input, textarea {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 19px 25px;
+  }
+
+  .container01{
+    width: 90%;
+  }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://patelmahir.com/sitemap.xml
